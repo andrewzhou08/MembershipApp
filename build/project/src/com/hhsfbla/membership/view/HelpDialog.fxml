@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="400.0" minWidth="500.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" stylesheets="@Theme.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Main Menu">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                     <children>
+                        <ImageView fitHeight="223.0" fitWidth="357.0" layoutX="71.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@help-main.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="4.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Create, Edit, or Delete Members" />
+                        <Line endX="50.0" endY="-30.0" layoutX="184.0" layoutY="216.0" startX="-1.0" startY="10.0" styleClass="label" AnchorPane.bottomAnchor="50.5" AnchorPane.leftAnchor="83.5" AnchorPane.rightAnchor="115.5" AnchorPane.topAnchor="230.0" />
+                        <Ellipse fill="TRANSPARENT" layoutX="371.0" layoutY="125.0" radiusX="59.0" radiusY="88.0" stroke="BLACK" strokeType="INSIDE" styleClass="label" />
+                        <Line endX="30.0" layoutX="187.0" layoutY="176.0" startY="50.0" styleClass="label" AnchorPane.bottomAnchor="40.292891681194305" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="182.2928916811943" AnchorPane.topAnchor="212.0" />
+                        <Text layoutX="266.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="List of Members" />
+                        <Text layoutX="4.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Menu" />
+                        <Text layoutX="6.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Member" />
+                        <Text layoutX="12.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Info" />
+                        <Line endX="-55.0" endY="20.0" layoutX="125.0" layoutY="98.0" startX="-100.0" styleClass="label" AnchorPane.bottomAnchor="168.5" AnchorPane.leftAnchor="24.5" AnchorPane.rightAnchor="174.5" AnchorPane.topAnchor="97.5" />
+                        <Line endX="-70.0" endY="-5.0" layoutX="143.0" layoutY="23.0" startX="-100.0" styleClass="label" />
+                        <Text layoutX="436.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Filter" />
+                        <Text layoutX="432.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Reports" />
+                        <Line endX="-72.0" endY="-10.0" startX="-100.0" styleClass="label" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="25.0" />
+                        <Line endX="-65.0" endY="25.0" startX="-100.0" startY="5.0" styleClass="label" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="220.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Edit Dialog">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                     <children>
+                        <ImageView fitHeight="194.0" fitWidth="473.0" layoutX="16.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@help-edit.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="16.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Member Information" />
+                        <Line endX="-80.0" endY="-40.0" layoutX="179.0" layoutY="180.0" startX="-100.0" styleClass="label" AnchorPane.topAnchor="180.0" />
+                        <Text layoutX="207.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Confirm/Cancel Buttons" />
+                        <Line endX="-90.0" endY="-65.0" layoutX="384.0" layoutY="224.0" startX="-100.0" styleClass="label" AnchorPane.leftAnchor="275.0" AnchorPane.topAnchor="200.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Reports">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background">
+                     <children>
+                        <ImageView fitHeight="333.0" fitWidth="304.0" layoutX="185.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@help-report.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="14.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="List of Members" />
+                        <Line endX="20.0" endY="50.0" layoutX="165.0" layoutY="66.0" startX="-100.0" styleClass="label" />
+                        <Text layoutX="14.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label" text="Print or Export Report" />
+                        <Line endX="20.0" endY="10.0" layoutX="172.0" layoutY="323.0" startX="-100.0" styleClass="label" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="General">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From the &quot;Get Started&quot; page, click &quot;New&quot; to get to the program with a new" />
+                        <Text layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="document, and &quot;Open&quot; to open a document. Click &quot;Close&quot; to go straight to" />
+                        <Text layoutX="14.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="the program, and &quot;Exit&quot; to exit the program." />
+                        <Text layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click &quot;Help&quot; to get back to this page, and &quot;About&quot; for program information." />
+                        <Text layoutX="14.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The program backs the file up in the folder /backup/ and exports to the folder" />
+                        <Text layoutX="14.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/output/. Backups happen every 10 minutes; exports happen when the user" />
+                        <Text layoutX="14.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="clicks on &quot;Export to .xls&quot; in a report." />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

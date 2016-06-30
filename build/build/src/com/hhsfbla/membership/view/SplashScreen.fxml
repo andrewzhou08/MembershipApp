@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="350.0" minWidth="500.0" styleClass="background" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hhsfbla.membership.view.SplashScreenController">
+   <children>
+      <SplitPane dividerPositions="0.15472779369627507" orientation="VERTICAL" prefHeight="350.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="background-dark">
+               <children>
+                  <Text layoutX="13.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-header" text="Desktop Application" />
+                  <Text layoutX="231.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-bright" text="v1.0.1" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="background">
+               <children>
+                  <AnchorPane layoutX="237.0" layoutY="47.0" prefHeight="200.0" prefWidth="263.0" styleClass="background-dark">
+                     <children>
+                        <Label fx:id="recent" layoutX="14.0" layoutY="92.0" text="Label" />
+                        <Text layoutX="13.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-header" text="Recent File" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="18.0" layoutY="107.0" prefHeight="76.0" prefWidth="221.0" styleClass="background-dark">
+                     <children>
+                        <Button layoutX="-2.0" layoutY="8.0" mnemonicParsing="false" onAction="#openDocument" prefHeight="61.0" prefWidth="226.0" styleClass="button-transparent-dark" text="Open Existing Document" />
+                        <Text layoutX="63.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 8;" text="Edit an existing Database" />
+                     </children></AnchorPane>
+                  <Button layoutX="20.0" layoutY="49.0" mnemonicParsing="false" onAction="#newDocument" prefHeight="57.0" prefWidth="210.0" styleClass="button-transparent" text="New Document" />
+                  <Text layoutX="20.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-header" text="Get Started" />
+                  <Button layoutX="395.0" layoutY="251.0" mnemonicParsing="false" onAction="#exit" prefHeight="28.0" prefWidth="91.0" text="Exit" />
+                  <Button layoutX="282.0" layoutY="251.0" mnemonicParsing="false" onAction="#close" prefHeight="28.0" prefWidth="97.0" text="Close" />
+                  <Button layoutX="22.0" layoutY="190.0" mnemonicParsing="false" onAction="#help" prefHeight="49.0" prefWidth="91.0" styleClass="button-transparent" text="Help" />
+                  <Button layoutX="130.0" layoutY="190.0" mnemonicParsing="false" onAction="#about" prefHeight="49.0" prefWidth="91.0" styleClass="button-transparent" text="About" />
+                  <Text fill="#bcbcbc" layoutX="9.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label-bright" text="by Andrew Zhou" />
+                  <Text layoutX="65.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 8;" text="Create a new Member Database" />
+                  <Accordion layoutX="221.0" layoutY="10.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hhsfbla.membership.view.MembersReportController">
+   <children>
+      <SplitPane dividerPositions="0.8421052631578947" orientation="VERTICAL" prefHeight="800.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="table" layoutX="50.0" layoutY="49.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="stateColumn" prefWidth="62.0" text="State" />
+                      <TableColumn fx:id="numberColumn" prefWidth="93.0" text="Number" />
+                        <TableColumn fx:id="lNameColumn" prefWidth="141.0" text="Last Name" />
+                        <TableColumn fx:id="fNameColumn" prefWidth="110.0" text="First Name" />
+                        <TableColumn fx:id="joinDateColumn" prefWidth="67.0" text="Joined" />
+                        <TableColumn fx:id="gradeColumn" prefWidth="62.0" text="Grade" />
+                        <TableColumn fx:id="amtOwedColumn" prefWidth="64.0" text="Owed" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="87.0" prefWidth="598.0">
+               <children>
+                  <Label layoutX="16.0" layoutY="9.0" prefHeight="29.0" prefWidth="159.0" text="Non-Active Members:" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="9.0" />
+                  <Label fx:id="numInactiveMembers" layoutX="196.0" layoutY="15.0" prefHeight="17.0" prefWidth="87.0" styleClass="label-bright" text="Label" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="317.0" AnchorPane.topAnchor="15.0" />
+                  <Label layoutX="16.0" layoutY="36.0" prefHeight="17.0" prefWidth="159.0" text="Active Members:" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="36.0" />
+                  <Label fx:id="numActiveMembers" layoutX="196.0" layoutY="36.0" prefHeight="17.0" prefWidth="87.0" styleClass="label-bright" text="Label" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="317.0" AnchorPane.topAnchor="36.0" />
+                  <Label layoutX="299.0" layoutY="15.0" prefHeight="17.0" prefWidth="126.0" text="Members Owing:" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="299.0" AnchorPane.rightAnchor="173.0" AnchorPane.topAnchor="15.0" />
+                  <Label fx:id="numOwedMembers" layoutX="486.0" layoutY="15.0" prefHeight="17.0" prefWidth="97.0" styleClass="label-bright" text="Label" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="486.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="15.0" />
+                  <Label layoutX="299.0" layoutY="36.0" prefHeight="17.0" prefWidth="175.0" text="Total Amount Owed:" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="299.0" AnchorPane.rightAnchor="126.0" AnchorPane.topAnchor="36.0" />
+                  <Label fx:id="totalOwed" layoutX="485.0" layoutY="36.0" prefHeight="17.0" prefWidth="97.0" styleClass="label-bright" text="Label" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="485.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="36.0" />
+                  <ButtonBar layoutX="4.0" layoutY="80.0" prefHeight="40.0" prefWidth="566.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="80.0">
+                    <buttons>
+                        <Button mnemonicParsing="false" onAction="#handlePrint" prefHeight="32.0" prefWidth="114.0" styleClass="print" text="Print" />
+                        <Button mnemonicParsing="false" onAction="#handleExport" prefHeight="32.0" styleClass="download" text="Export to .xls..." />
+                        <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="32.0" prefWidth="588.0" styleClass="cancel" text="Cancel" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

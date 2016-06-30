@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="600.0" stylesheets="@Theme.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hhsfbla.membership.view.SeniorsReportController">
+   <children>
+      <SplitPane dividerPositions="0.8595988538681948" layoutX="84.0" layoutY="145.0" orientation="VERTICAL" prefHeight="800.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableSeniors" layoutX="14.0" layoutY="155.0" prefHeight="687.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="gradeColumn" prefWidth="58.0" text="Grade" />
+                      <TableColumn fx:id="stateColumn" prefWidth="53.0" text="State" />
+                        <TableColumn fx:id="lNameColumn" prefWidth="147.0" text="Last Name" />
+                        <TableColumn fx:id="fNameColumn" prefWidth="101.0" text="First name" />
+                        <TableColumn fx:id="emailColumn" prefWidth="236.0" text="Email" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="103.0" prefWidth="518.0">
+               <children>
+                  <ButtonBar layoutX="4.0" layoutY="25.0" prefHeight="40.0" prefWidth="486.0" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="25.0">
+                    <buttons>
+                      <Button mnemonicParsing="false" onAction="#handlePrint" prefHeight="64.0" prefWidth="438.0" styleClass="print" text="Print" />
+                        <Button mnemonicParsing="false" onAction="#handleExport" prefHeight="65.0" styleClass="download" text="Export as xls..." />
+                        <Button mnemonicParsing="false" onAction="#handleCancel" prefHeight="48.0" styleClass="cancel" text="Cancel" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

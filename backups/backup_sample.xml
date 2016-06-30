@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<members>
+    <member>
+        <activeStatus>true</activeStatus>
+        <amountOwed>10</amountOwed>
+        <email>andrewzhou08@gmail.com</email>
+        <firstName>Andrew</firstName>
+        <grade>10</grade>
+        <isNewMember>false</isNewMember>
+        <lastName>Zhou</lastName>
+        <membershipNumber>5141100</membershipNumber>
+        <school>Homestead</school>
+        <state>CA</state>
+        <yearJoined>2016</yearJoined>
+    </member>
+</members>
